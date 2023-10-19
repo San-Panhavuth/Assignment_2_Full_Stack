@@ -1,0 +1,85 @@
+<!-- 2. Design a HTML document for any School to fill the job application form for the interview process with suitable form validations. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+
+<style>
+    body {
+        background-color: rgb(112, 161, 199);
+        text-align: center;
+    }
+    #head1{
+        background-color: aliceblue;
+        width: auto;
+        max-width: 600px;
+        padding: 30px;
+        border: 1px solid #f6f6f6;
+        border-radius: 5px;
+        box-shadow: 0 0 10px hsla(0, 0%, 100%, 0.9);
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        margin: auto;
+        margin-bottom: 0px;
+        
+
+        
+    }
+    .Form  {
+    background-color: #d99d2e;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #e3ad48;
+    border-radius: 5px;
+
+    }
+    .Form2  {
+    background-color: #d2ac64;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ffc65d;
+    border-radius: 5px;
+    }
+
+
+</style>
+</head>
+<body>
+<h1 id="head1">Job Application</h1>
+<div class="Form">
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name">  
+    <br><br>       
+    <label for="Email">Email:</label>
+    <input type="email" id="email">
+    <br><br>
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone">
+</form>
+</div>
+
+<div class="Form2">
+    <form>
+        <label for="position">Position:</label>
+        <select name="position" id="position">
+            <option value="Front End Developer">Front End Developer</option>
+            <option value="Back End Developer">Back End Developer</option>
+            <option value="Game Designer">Game Development</option>
+        </select> 
+    
+        <br><br>       
+    </form>
+    <label for="resume">Resume (PDF or Word document):</label><br><br>
+    <input type="file"><br><br>
+    <input type="submit" value="Submit">
+    </div>
+
+</body>
+</html>

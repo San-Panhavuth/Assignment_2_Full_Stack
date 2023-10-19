@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<style>
+    body{
+        background: #ff0202;
+        text-align: center;
+    }
+    @media screen and (max-width: 687px){
+        body{
+            background-color: #ff0202;
+        }
+    }
+    .items{
+        display: inline-block;
+        background-color: aliceblue;
+        animation: Moving 10s infinite;
+    }
+    @keyframes Moving {
+        0%,100%{
+            transform: translateX(200px);
+        }
+        50%{
+            transform: translateY(500px);
+        }
+
+    }
+</style>
+
+<body>
+<div class="items">
+    <h1>Hi</h1>
+</div>
+<div class="items">
+    <h1>Hello</h1>
+</div>
+<div class="items">
+    <h1>What's up</h1>
+</div>
+
+</body>
